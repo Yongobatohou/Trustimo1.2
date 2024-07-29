@@ -1,0 +1,35 @@
+{
+    "name": "balink/balink-pay",
+    "description": "payment gateway for balink.io",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Balink\\BalinkPay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Balink\\BalinkPay\\BalinkPayServiceProvider"
+            ],
+            "aliases": {
+                "BalinkPay": "Balink\\BalinkPay\\Facades\\BalinkPay"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Mohammadi",
+            "email": "imohammadd@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "8.x-dev"
+    }
+}
